@@ -1,6 +1,3 @@
--- Create schemas
-
--- Create tables
 CREATE TABLE IF NOT EXISTS professor
 (
     p_email VARCHAR(50) NOT NULL,
@@ -40,20 +37,19 @@ ALTER TABLE course
     REFERENCES professor(p_email)
     MATCH SIMPLE
 ;
-    
-ALTER TABLE course
-    ADD    FOREIGN KEY (c_number)
-    REFERENCES enroll_list(c_number)
-    MATCH SIMPLE
-;
-    
+   
 ALTER TABLE enroll_list
     ADD CONSTRAINT FK_lab2
     FOREIGN KEY (s_email)
     REFERENCES student(s_email)
     MATCH SIMPLE
 ;
-    
+   
+ALTER TABLE enroll_list
+    ADD    FOREIGN KEY (s_email)
+    REFERENCES course(c_number)
+    MATCH SIMPLE
+;  
 
 -- Create Indexes
 
