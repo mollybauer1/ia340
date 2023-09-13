@@ -17,3 +17,7 @@ select * from professor
 insert into public.course(c_number, c_name, room, p_email) values ('c1', 'postgresql', 'r1', 'p1@jmu.edu'),
 ('c2', 'mongodb', 'r2', 'p2@jmu.edu'), ('c3', 'twitter', 'r1', 'p1@jmu.edu')
 select * from course
+
+--q.4
+insert into public.enroll_list(s_email, c_number) values ('s1@jmu.edu', 'c1'), ('s2@jmu.edu', 'c1'),
+('s3@jmu.edu', 'c1'), ('s4@jmu.edu', 'c2'), ('s2@jmu.edu', 'c3'), ('s3@jmu.edu', 'c3')
