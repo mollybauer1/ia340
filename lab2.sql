@@ -46,7 +46,7 @@ ALTER TABLE enroll_list
 ;
    
 ALTER TABLE enroll_list
-    ADD    FOREIGN KEY (s_email)
+    ADD    FOREIGN KEY (c_number)
     REFERENCES course(c_number)
     MATCH SIMPLE
 ;  
