@@ -43,3 +43,11 @@ from enroll_list
 group by c_number
 order by num_student desc
 limit 1
+
+--q9
+
+select professor.p_name, course.c_name
+from professor inner join course on professor.p_email = course.p_email
+
+--q10
+
