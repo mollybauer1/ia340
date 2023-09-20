@@ -50,4 +50,8 @@ select professor.p_name, course.c_name
 from professor inner join course on professor.p_email = course.p_email
 
 --q10
-
+select professor.p_name, count (course.c_name) as num_course
+from professor inner join course on professor.p_email = course.p_email
+group by professor.p_name
+order by num_course desc
+limit 1
