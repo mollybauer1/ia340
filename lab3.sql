@@ -32,3 +32,9 @@ insert into public.course(c_number, c_name, room, p_email) values ('c4', 'facebo
 UPDATE course
 set p_email = 'p3@jmu.edu' where p_email = 'p1@jmu.edu';
 delete from professor where p_name = 'p1'
+
+
+--q7
+select * from enroll_list
+
+--q8
