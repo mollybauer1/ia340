@@ -38,3 +38,8 @@ delete from professor where p_name = 'p1'
 select * from enroll_list
 
 --q8
+select c_number, count(*) as num_student
+from enroll_list
+group by c_number
+order by num_student desc
+limit 1
